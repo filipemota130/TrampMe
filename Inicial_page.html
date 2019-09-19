@@ -4,7 +4,7 @@
 <head>
     <title>Inicial</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="IServices.js"></script>
 
     <!-- Bootstrap-->
@@ -17,144 +17,325 @@
 
 
 <body>
-    <!--Navbar-->
+    <div class="container">
+        <!--Navbar-->
         <header id="navigation" class="fixed-top justify-content-end" style="background-color: #011E2E;">
-                <div class="container">
-                    <!--Navbar-->
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-#011E2E">
-                            <a class="navbar-brand" href="#">TrampMe</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-#011E2E">
+                    <a class="navbar-brand" href="#">TrampMe</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
-                        
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Serviços</a>
-                                </li>
-                                <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Como funciona</a>
-                                </li>
-                            </ul>
-                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Acessar</button>
-                            </div>
-                        </nav>
-                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Acessar</button>
+                    </div>
+                </nav>
+            </div>
         </header> <br><br><br>
+        <!--Cads das categorias-->
 
-        <img src="images/pc_isometric.png" style="height: 550px; padding-top: 10px">    
-<!--Cads das categorias-->
-    <section>
-        <!--primeira linha de cards-->
-        <div class="card-deck">
-            <div class="card" style="width: 18rem;">
-                    <img src="images/ferramentas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Consertos</p>
-                    </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                    <img src="images/kids.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Babá</p>
-                    </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                    <img src="images/pintor.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Pintura</p>
-                    </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                    <img src="images/costura.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Costura</p>
-                    </div>
-            </div>
-            
-        </div>
-        <!--segunda linha de cards-->
-        <div class="card-deck">
-                <div class="card" style="width: 18rem;">
-                        <img src="images/fotografo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Fotografia</p>
-                        </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img src="images/design.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Design</p>
-                        </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img src="images/web.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Desenvolvimento Web</p>
-                        </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img src="images/musica.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Música</p>
-                        </div>
-                </div>
-    </section>
-<!--grid horizontal de 5 itens-->
-
-<section id="infos" style="padding-top: 40px;">
+        <!--Botstrap Theme-->
+        <!-- Page Content -->
         <div class="container">
+
             <div class="row">
-                <!-- <div class="col-md-12 wow bounceIn">
+
+                <div class="col-lg-3">
+
+                    <h1 class="my-4">O que está procurando?</h1>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Costura</a>
+                        <a href="#" class="list-group-item">Encanamento</a>
+                        <a href="#" class="list-group-item">Marcenaria</a>
+                        <a href="#" class="list-group-item">Eletricista</a>
+                        <a href="#" class="list-group-item">Pintura</a>
+                    </div>
+
+                </div>
+                <!-- /.col-lg-3 -->
+
+                <div class="col-lg-9">
+
+                    <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-12">
+
+                            <!--Card-->
+                            <div class="card card-cascade narrower">
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Google map-->
+                                    <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 300px">
+                                        <iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!--Grid column-->
+                    </div>
+
+                    <div class="row">
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+                        <!--Card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-auto col-4 mx-auto text-nowrap text-center px-3">
+                                            <a href="">
+                                                <img class="d-block mx-auto rounded-circle img-fluid" src="http://api.randomuser.me/portraits/women/73.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg text-center text-lg-left">
+                                            <h4 class="card-title">
+                                                <a href="#">Maria Antonieta</a>
+                                            </h4>
+                                            <span class="badge badge-secondary badge-pill">Reparos</span> <span class="badge badge-secondary badge-pill">Vestidos de baile</span> <span class="badge badge-secondary badge-pill">Saias</span>
+
+                                        </div>
+                                        <div class="col-lg-auto col-sm-8 mx-auto">
+                                            <div class="row text-center">
+                                                <p>Especializada em reparos de vestidos de baile e confecção de saias rodadas</p>
+                                                <button class="btn btn-outline-success rounded list-inline-item ml-3">Entrar em contato</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim Card-->
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.col-lg-9 -->
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+
+
+
+
+        <!--grid horizontal de 5 itens-->
+
+        <section id="infos" style="padding-top: 40px;">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-12 wow bounceIn">
           <h2 class="text-uppercase">Working Areas</h2>
         </div> -->
-                <div class="col-md-4 wow fadeInUp templatemo-box"
-                    data-wow-delay="0.3s">
-                    <i class="fa fa-search"></i>
-                    <img src="..." class="card-img-top" alt="...">
-                    <p>Busque o profissional ideal para<br> 
-                        você estabelecendo filtros de <br> 
-                        busca</p>
-                </div>
-                <div class="col-md-4 wow fadeInUp templatemo-box"
-                    data-wow-delay="0.3s">
-                    <i class="fa fa-search"></i>
-                    <img src="..." class="card-img-top" alt="...">
-                    <p>Ao clicar em cadastre-se você <br> 
-                        nos informou seus dados.<br> 
-                        Criaremos um perfil para você!</p>
-                </div>
-                <div class="col-md-4 wow fadeInUp templatemo-box"
-                    data-wow-delay="0.3s">
-                    <i class="fa fa-search"></i>
-                    <img src="..." class="card-img-top" alt="...">
-                    <p>Ao clicar em cadastre-se você <br> 
-                        nos informou seus dados.<br> 
-                        Criaremos um perfil para você!</p>
-                </div>
-                <div class="col-md-4 wow fadeInUp templatemo-box"
-                    data-wow-delay="0.3s">
-                    <i class="fa fa-code"></i>
-                    <img src="..." class="card-img-top" alt="...">
-                    <p>
-                        Configure o perfil para que<br>
-                        fique o mais parecido com você! <br>
-                        Lembre-se que o modo como<br>
-                        você apresenta seu trabalho é<br>
-                        essencial para uma boa<br>
-                        divulgação. </p>
-                </div>
-                <div class="col-md-4 wow fadeInUp templatemo-box"
-                    data-wow-delay="0.3s">
-                    <i class="fa fa-users"></i>
-                    <img src="..." class="card-img-top" alt="...">
-                    <p>Agora é só aguardar as<br>
-                        solicitações de contrato para a<br>
-                        prestação de serviços</p>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-search"></i>
+                        <img src="..." class="card-img-top" alt="...">
+                        <p>Busque o profissional ideal para<br> você estabelecendo filtros de <br> busca
+                        </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-search"></i>
+                        <img src="..." class="card-img-top" alt="...">
+                        <p>Ao clicar em cadastre-se você <br> nos informou seus dados.<br> Criaremos um perfil para você!</p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-search"></i>
+                        <img src="..." class="card-img-top" alt="...">
+                        <p>Ao clicar em cadastre-se você <br> nos informou seus dados.<br> Criaremos um perfil para você!</p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-code"></i>
+                        <img src="..." class="card-img-top" alt="...">
+                        <p>
+                            Configure o perfil para que<br> fique o mais parecido com você! <br> Lembre-se que o modo como<br> você apresenta seu trabalho é<br> essencial para uma boa<br> divulgação. </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <i class="fa fa-users"></i>
+                        <img src="..." class="card-img-top" alt="...">
+                        <p>Agora é só aguardar as<br> solicitações de contrato para a<br> prestação de serviços</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
+    </div>
 </body>
+
 </html>

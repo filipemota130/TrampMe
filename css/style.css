@@ -1,14 +1,68 @@
-h1{
+h1 {
     color: black;
     text-align: right;
 }
 
-h2{
+h2 {
     color: black;
     text-align: right;
 }
 
-.footer{
-    background-color: black; 
+.footer {
+    background-color: black;
+}
 
+.que {
+    width: 100%
+}
+
+@media (min-width: 576px) {
+    .que {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .que {
+        padding: 160px;
+    }
+}
+
+@media (min-width: 992px) {
+    .que {
+        padding: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .que {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .que {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .que {
+        padding: 20px;
+    }
+}
+
+.map-container-5 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-5 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
